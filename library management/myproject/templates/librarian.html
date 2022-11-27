@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+			overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            font-family: "Righteous", cursive;
+            min-height: cover;
+            background-color: #a9c9ff;
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+           
+        }
+
+        .container {
+            max-width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 35px;
+            margin: 0 auto;
+            padding: 40px 0;
+            position: absolute;
+            margin: 20px;
+            margin-top: -150px;
+
+        }
+
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 520px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            padding-bottom: 100px;
+           
+
+        }
+
+        .face {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .face1 {
+            box-sizing: border-box;
+            padding: 20px
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mybutton {
+            line-height: 12px;
+            width: 70px;
+            font-size: 8pt;
+            /* font-family: tahoma; */
+            margin-top: 1px;
+            margin-right: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .mybutton1 {
+            line-height: 12px;
+            width: 70px;
+            font-size: 8pt;
+            /* font-family: tahoma; */
+            margin-top: 1px;
+            margin-right: 100px;
+            position: absolute;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            top: 0;
+            right: 0;
+        }
+
+        .face2 {
+            transition: 0.5s;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .card:hover .face.face2 {
+            height: 60px;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+
+        .card:nth-child(1) .face.face2 {
+            background-image: linear-gradient(40deg,
+                    #fffc00 0%,
+                    #fc00ff 45%,
+                    #00fffc 100%);
+            border-radius: 15px;
+        }
+
+        /* body {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+        height: 100vh;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-size: 100% 100%;
+        position: relative;
+        background-attachment: fixed;
+      } */
+        
+        body {
+            padding-top: 150px;
+            background: #28292d;
+            text-align: center;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+            height: 90vh;
+            -webkit-background-size: cover;
+            background-size: 93%;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <span class="stars"></span>
+
+    <header>
+        <div class="container1">
+            <div class="box">
+                <form method="" action="librarian">
+                    <p style="color: black">Send reminder email</p>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="update">
+                    <p style="color: black">Add a new book</p>
+                    <input type="text" placeholder="Enter bookname" name="bname" cols="25" rows="2" required />
+                    <input type="text" placeholder="Enter department" name="dname" cols="25" rows="2" required />
+                    <input type="text" placeholder="availability" name="count" cols="25" rows="2" required />
+                    <br>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="research">
+                    <p style="color: black">Add a new research paper</p>
+                    <input type="text" placeholder="Enter department" name="dname" cols="25" rows="2" required />
+                    <input type="url" id="homepage" name="url" placeholder="Enter URL"><br><br>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="present">
+                    <p style="color: black">At present strength of students</p>
+                    <input type="date" placeholder="Enter date" name="date" cols="25" rows="2" required />
+                    <input type="submit" />
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="face face2">
+        <h2>Librarian Login</h2>
+    </div>
+</div>
+</div>
+-

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+            height: 100vh;
+            -webkit-background-size: cover;
+            background-size: 93%;
+            display: flex;
+            position: fixed;
+            margin-left: 600px;
+        }
+
+        .card {
+            max-width: 300px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            border-radius: 8px;
+            margin-left: 50px;
+            /* margin-bottom: 100px; */
+            margin-top: 180px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+     {% load static %}
+     <form method="" action="otp2">
+        {% csrf_token %}
+        <div class="card">
+            <h2>Authentication Page</h2>
+            <input class="ip" type="text" placeholder="Enter Roll Number" name="rollno" required cols="25" rows="2"><br>
+            <input class="ip" type="text" placeholder="Enter Code" name="otp" required cols="25" rows="2"><br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
